@@ -1,7 +1,7 @@
-#include "temporarily.h"
+#include "unnecessary_directory.h"
 #include "encryption.h"
 #include "cli.h"
-#include "temp.h"
+#include "zip.h"
 
 
 int main(int argc ,char* argv[]){
@@ -49,7 +49,7 @@ else if(mode == "dec"){
 
     unzip_file(input + ".unzipped",output);
 
-    // delete_zip(input);
+    delete_zip(input);
     delete_zip(input + ".unzipped");
 
     fix_extracted_directory(output);
